@@ -1,0 +1,1 @@
+This repository contain code to control the Tello drone
