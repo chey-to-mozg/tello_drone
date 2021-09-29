@@ -32,8 +32,8 @@ Using `get_all_keys` we update current state of keyboard events, after that usin
 
 `follow_face` method is the main algorithm to detect face and set necessary speed to move the drone so that the face is in the center of the image. The closest face will be chosen. Stays in place if faces are not detected;
 
-<p>`send_control` will send speed parameters to the drone. <br>
-<strong>Pressed keys will send nothing, they just set speed for `send_comand` method</strong>;</p>
+`send_control` will send speed parameters to the drone.  
+<strong>Pressed keys will send nothing, they just set speed for `send_comand` method</strong>;
 
 `print_info` method will print current left\rigt, forward\backward, up\down, and yaw velocities;
 
