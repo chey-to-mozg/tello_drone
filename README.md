@@ -1,5 +1,8 @@
 ## This repository contain code to control the Tello drone
 
+To install all required libraries simply run:  
+`pip install -r requirements.txt`
+
 The repository contains auxiliary code `my_keyboard.py`. In this code `pygame` library was used to handle keyboard events.
 
 <strong> !!! Because of `pygame` library, you need to set focus on pygame window when it started, to send commands from the keyboard.</strong>
