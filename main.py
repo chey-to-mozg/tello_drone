@@ -1,7 +1,7 @@
 import cv2
 from drone_w_keyboard import Drone
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     drone = Drone()
 
     while True:
@@ -9,6 +9,10 @@ if __name__ == '__main__'
         frame = drone.frameReader.frame
         frame = cv2.resize(frame, (drone.w, drone.h))
 
+        if drone.reverse_frame:
+            frame = frame[50:, :]
+            frame = cv2.cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            frame = cv2.flip(frame, -1)
         if drone.follow:
             drone.follow_face(frame)
 
